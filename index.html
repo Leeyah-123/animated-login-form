@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Animated Login Form</title>
+  </head>
+  <body>
+    <div class="auth-card" data-current="login">
+      <div class="main">
+        <div class="login-content">
+          <h1 class="heading">Sign In</h1>
+          <ul class="socials">
+            <li>
+              <a href="#" aria-label="Login With Google">
+                <!-- Google Icon -->
+                <i class="fa fa-google-plus"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="Login With Facebook">
+                <!-- Facebook Icon -->
+                <i class="fa fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="Login With Github">
+                <!-- Github Icon -->
+                <i class="fa fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="Login With LinkedIn">
+                <!-- LinkedIn Icon -->
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+          <p>or use your email & password</p>
+
+          <form onsubmit="(e) => e.preventDefault()">
+            <input
+              type="email"
+              placeholder="Email"
+              aria-label="Please provide your email address"
+              required
+            />
+            <input
+              type="password"
+              placeholder="Password"
+              aria-label="Please provide your preferred password"
+              required
+            />
+
+            <a class="forgot-password" href="#">Forgot your password?</a>
+            <button class="btn btn-primary" type="submit">Sign In</button>
+          </form>
+        </div>
+        <div class="signup-content">
+          <h1 class="heading">Create Account</h1>
+          <ul class="socials">
+            <li>
+              <a href="#" aria-label="Login With Google">
+                <!-- Google Icon -->
+                <i class="fa fa-google-plus"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="Login With Facebook">
+                <!-- Facebook Icon -->
+                <i class="fa fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="Login With Github">
+                <!-- Github Icon -->
+                <i class="fa fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="Login With LinkedIn">
+                <!-- LinkedIn Icon -->
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+          <p>or use your email for registration</p>
+
+          <form onsubmit="(e) => e.preventDefault()">
+            <input
+              type="text"
+              placeholder="Name"
+              aria-label="Please provide your full name"
+              required
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              aria-label="Please provide your email address"
+              required
+            />
+            <input
+              type="password"
+              placeholder="Password"
+              aria-label="Please provide your preferred password"
+              required
+            />
+
+            <button class="btn btn-primary" type="submit">Sign Up</button>
+          </form>
+        </div>
+      </div>
+      <div class="aside">
+        <div class="login-content">
+          <h2 class="heading">Hello, Friend!</h2>
+          <p>Register with your personal details to use all of site features</p>
+          <button class="btn btn-secondary" onclick="toggleActiveForm()">
+            Sign up
+          </button>
+        </div>
+        <div class="signup-content">
+          <h2 class="heading">Welcome Back!</h2>
+          <p>Enter your personal details to use all of the site features</p>
+          <button class="btn btn-secondary" onclick="toggleActiveForm()">
+            Sign in
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
